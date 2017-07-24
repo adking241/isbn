@@ -1,4 +1,6 @@
-# def my_funt()
+def check_that_num_is_array(input_num)
+	input_num = isbnArray
+	isbnArray = [input_num]
 # end
 
 # def other_funcv()
@@ -9,3 +11,4 @@
 # 	other_funcv()
 # else
 # 	puts "Please enter numbers"
+
