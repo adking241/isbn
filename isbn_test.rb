@@ -7,13 +7,23 @@ class TestIsbn < Minitest::Test
 		assert_equal(1, 1)
 	end
 
-	def test_assert_that_result_equals_array
-		assert_equal(Array, check_that_nbr_array().class)
+	# def test_assert_that_result_equals_array
+	# 	assert_equal(Array, check_that_nbr_array().class)
+	# end
+
+	def test_assert_that_string_is_ten_length
+		isbn_array = "1234567890"
+		assert_equal(true, string_length?(isbn_array))
 	end
 
-	def test_assert_that_array_is_ten_length
-		input_num = 0345676542
-		assert_equal(10, check_that_nbr_array.length)
+	def test_for_string_length_false
+		isbn_array = "123456789110"
+		assert_equal(false, string_length?(isbn_array))
 	end
+
+	def test_assert_that_array_length
+		isbn_array = "1234567890"
+		assert_equal(10, get_isbn(isbn_array))
+	end	
 end
 
